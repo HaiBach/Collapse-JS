@@ -17,6 +17,13 @@ class Collapse {
  * Class su li chinh
  */
 class CollapseOne {
+  $toggle: any;
+  $target: any;
+  actived: string;
+  ready: string;
+  duration: number;
+  isActived: boolean;
+
   constructor($toggle) {
     let dataTarget = $toggle.getAttribute('data-target') || '',
         $targets = document.querySelectorAll(dataTarget);
